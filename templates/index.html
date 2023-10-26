@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Subrata | portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top text-uppercase">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto px-lg-4">
+                    <a class="nav-link active px-lg-4 rounded" href="#">Home </a>
+                    <a class="nav-link px-lg-4 rounded" href="#About">About</a>
+                    <a class="nav-link px-lg-4 rounded" href="#Projects">Projects</a>
+                    <a class="nav-link  px-lg-4 rounded" href="#Contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Add this div where you want to display the flash message -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="alert alert-success alert-dismissible fade show my-custom-flash text-center" role="alert">
+        {{ messages[0] }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endif %}
+    {% endwith %}
+
+
+
+
+    <!-- main section start -->
+
+    <section class="main" py-5>
+        <div class="container" py-5>
+            <div class="row" py-5>
+                <div class="col-lg-6" py-5 mr-auto>
+                    <h3>
+                        <small>Hello, I'm</small>
+                        <br>
+                        Subrata Das
+                    </h3>
+                    <h2><span id="element"></span></h2>
+                    <!-- <h6>
+                        Aspiring Data Scientist
+                    </h6> -->
+                    <input type="button" value="My Resume" class="bt1 mt-5 mr-3">
+                    <a href="https://github.com/subdas374" target="_blank"><input type="button" value="Visit Github"
+                            class="bt2 mt-5 "></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about py-5" id="About">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="" alt="">
+                </div>
+                <div class="col-lg-7 pt-3">
+                    <h1>About Me.</h1>
+                    <p>Data Scientist & Data Analyst</p>
+                    <p class="py-3">As a data science student, I am passionate about using data to drive business
+                        decisions and solve
+                        real-world problems. With a strong foundation in statistics, machine learning, and data
+                        visualization, I am eager to apply my skills to real-world projects. During my studies, I have
+                        worked on several projects that have honed my skills in data analysis, modeling, and
+                        communication. I am excited to continue learning and growing as a data scientist while making a
+                        positive impact on organizations.</p>
+
+
+                    <div class="progress my-2">
+                        <div class="pro-value1">
+                            <p>Python<span class="text-white float-right">95%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-2">
+                        <div class="pro-value2">
+                            <p> Advance statistics <span class="text-white float-right">95%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="pro-value3">
+                            <p> SQL/No-SQL <span class="text-white float-right">97%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-2">
+                        <div class="pro-value4">
+                            <p> Teamwork <span class="text-white float-right">98%</span></p>
+                        </div>
+                    </div>
+
+                    <input type="button" class="btn1 mt-5" value="Download CV">
+                    <a href="#Contact"><input type="button" class="btn2 mt-5" value="Contact Me"></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- service  -->
+
+
+    <section class="projects py-5 bg-light" id="Projects">
+        <div class="container py-5">
+            <h1 class="text-center pb-5">Projects.</h1>
+            <div class="row pb-3">
+                <div class="col-lg-4 mb-3 wow fadeInLeft slow">
+                    <div class="card text-center h-100" style="width: 18rem;">
+                        <img class="card-img-top " src="../static/iris_flower.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">IrisSage</h5>
+                            <p class="card-text">This project is a Flask web application that predicts the Iris flower
+                                class using a machine learning model.
+                            </p>
+                            <a href="https://github.com/subdas374/IrisSage" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 ">
+                    <div class="card text-center h-100" style="width: 18rem;">
+                        <img class="card-img-top " src="../static/Codsoft.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">CodSoft Internship</h5>
+                            <p class="card-text">This repository contains the projects I completed during my Data
+                                Science internship at CodSoft</p>
+                            <a href="https://github.com/subdas374/CODSOFT" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center h-100" style="width: 18rem;">
+                        <img class="card-img-top " src="../static/iris_flower.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row pb-3">
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center h-100" style="width: 18rem;">
+                        <img class="card-img-top h-100" src="./images/iris_flower.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center h-100" style="width: 18rem;">
+                        <img class="card-img-top h-100" src="./images/iris_flower.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 mb-3">
+                    <div class="card text-center h-100" style="width: 18rem;">
+                        <img class="card-img-top h-100" src="./images/iris_flower.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div> -->
+
+
+        </div>
+    </section>
+
+
+    <!-- contact section -->
+
+    <section class="contact" id="Contact">
+        <div class="container">
+            <h1 class="text-center"> Contact Me</h1>
+            <div class="row py-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-lg-4">
+                            <div class="circle">
+                                <span><i class="fa fa-globe"></i></span>
+                            </div>
+                            <h5>Location</h5>
+                            <p>Kolkata, West Bengal, India</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="circle">
+                                <span><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <h5>Email</h5>
+                            <p>subdas374@gmail.com</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="circle">
+                                <span> <i class="fa fa-phone"></i></span>
+                            </div>
+                            <h5>Phone</h5>
+                            <p>+91 8609497475</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <form method="POST" action="/contact">
+                        <div class="form-row">
+                            <div class="col-lg-6">
+                                <input type="text" name="name" class="form-control bg-light mb-3" placeholder="Name"
+                                    required>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" name="email" class="form-control bg-light mb-3" placeholder="Email"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-lg-12">
+                                <textarea name="message" class="form-control bg-light" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn3 my-4">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="footer">
+        <footer class="py-3 text-center">
+            <p>Copy Right 2023 © By Subrata Das All Rights Reserved</p>
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Analyst', 'and i love Python'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+
+
+</body>
+
+
+</html>
